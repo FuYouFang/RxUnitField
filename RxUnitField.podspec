@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxUnitField'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Rx extension for UnitField.'
   
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source_files = 'RxUnitField/Classes/**/*'
   
   s.swift_version = '5.0'
-  s.dependency 'UnitField', '~> 0.1.0'
+  s.dependency 'UnitField', '~> 0.3.0'
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
 end
