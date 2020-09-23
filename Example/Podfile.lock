@@ -1,0 +1,45 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxUnitField (0.1.0):
+    - RxCocoa
+    - RxSwift
+    - UnitField (~> 0.1.0)
+  - UnitField (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - RxUnitField (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - UnitField
+
+EXTERNAL SOURCES:
+  RxUnitField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxUnitField: d6c819dfc06a5f8d7de2dd96882e272fcc04c15f
+  UnitField: de1658ea2801361fb90b113378ea1b845e522826
+
+PODFILE CHECKSUM: f18da04b25b5fae513c99c268ba1b5347ad46e34
+
+COCOAPODS: 1.9.3

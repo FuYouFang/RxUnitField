@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import RxUnitField
+import UnitField
+import RxCocoa
+import RxSwift
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var unitField: UnitField!
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        unitField.rx
+            .text
+            .subscribe { (test) in
+                debugPrint("current text: \(test ?? "")")
+            } onError: { (error) in
+                debugPrint("error:\(error)")
+            } onCompleted: {
+                debugPrint("completed")
+            } onDisposed: {
+                debugPrint("disposeb")
+            }
+            .disposed(by: disposeBag)
+
     }
 
     override func didReceiveMemoryWarning() {
